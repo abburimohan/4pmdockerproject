@@ -1,28 +1,28 @@
 version: '3'
 services:
-  movies:
-    image: rahamshaik/moviesservice:latest
+  aws:
+    image: rammohan478/aws
     ports:
       - "80:80"
     deploy:
       replicas: 3
 
-  train:
-    image: rahamshaik/trainservice:latest
+  devops:
+    image: rammohan478/devops 
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
-  dth:
-    image: rahamshaik/dthservice:latest
+  azure:
+    image: rammohan478/azure
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
-  recharge:
-    image: rahamshaik/rechargeservice:latest
+  datascience:
+    image: rammohan478/datascience
     ports:
       - "83:80"
     deploy:
